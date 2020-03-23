@@ -1,11 +1,6 @@
 import io.restassured.response.Response;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.io.IOException;
 
 import static io.restassured.RestAssured.*;
 public class Requst {
