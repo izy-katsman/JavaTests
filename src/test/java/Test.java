@@ -16,9 +16,9 @@ public class Test {
     static AndroidDriverManager driverManager;
     private LoginLayout loginLayout;
 
-    private static final String userName = "Kappa";
-    private static final String password = "kappakappahey";
-    private static final String email = "kappa@kappa.com";
+    private static final String userName = "123";
+    private static final String password = "123";
+    private static final String email = "123";
 
     @BeforeClass
     public static void prepareTest() {
@@ -27,10 +27,10 @@ public class Test {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
-   // @After
-    //public void teardownDriver() {
-     //   driverManager.quitDriver();
-    //}
+    @After
+    public void teardownDriver() {
+        driverManager.quitDriver();
+    }
 
     @Before
     public void initPageObject() {
